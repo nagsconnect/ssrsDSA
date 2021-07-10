@@ -1,7 +1,7 @@
-package datastructure;
+package main.datastructure;
 
-import entity.GraphEdge;
-import entity.GraphNode;
+import main.entity.GraphEdge;
+import main.entity.GraphNode;
 import lombok.Builder;
 
 import java.util.*;
@@ -16,8 +16,6 @@ public class Graph {
     List<List<GraphNode>> adjList;
     List<List<Integer>> adjMatrix;
     List<GraphEdge> edgeList;
-
-    public Graph() {}
 
     public List<Integer> bfs(int start, int end) {
         if (V == 0) {

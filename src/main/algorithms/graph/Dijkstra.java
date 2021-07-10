@@ -1,4 +1,4 @@
-package algorithms.graph;
+package main.algorithms.graph;
 
 /**
  * TODO documentation
