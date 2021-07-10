@@ -1,7 +1,7 @@
-package main.datastructure;
+package main.datastructure.graph;
 
-import main.entity.GraphEdge;
-import main.entity.GraphNode;
+import main.entity.graph.GraphEdge;
+import main.entity.graph.GraphNode;
 import lombok.Builder;
 
 import java.util.*;
