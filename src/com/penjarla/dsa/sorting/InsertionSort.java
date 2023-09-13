@@ -1,4 +1,4 @@
-package main.algorithms.sorting;
+package com.penjarla.dsa.sorting;
 
 import lombok.extern.log4j.Log4j2;
 
@@ -15,7 +15,7 @@ public class InsertionSort {
     /**
      * This method sorts the given list of integers using insertion sort technique.
      * Current element is placed in its sorted position by checking all elements
-     * present in the left side of the list. The position of current element is
+     * present on the left side of the list. The position of current element is
      * determined by moving left side of the list from previous index and stop
      * at position if current element greater than element at check index.
      */

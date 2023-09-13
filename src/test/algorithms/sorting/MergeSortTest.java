@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import main.algorithms.sorting.MergeSort;
+import com.penjarla.dsa.sorting.MergeSort;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

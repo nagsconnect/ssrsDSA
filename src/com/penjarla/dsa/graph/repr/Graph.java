@@ -1,7 +1,7 @@
-package main.datastructure.graph;
+package com.penjarla.dsa.graph.repr;
 
-import main.entity.graph.GraphEdge;
-import main.entity.graph.GraphNode;
+import com.penjarla.dsa.graph.repr.Edge;
+import com.penjarla.dsa.graph.repr.Node;
 import lombok.Builder;
 
 import java.util.*;
@@ -13,9 +13,9 @@ import java.util.*;
 @Builder
 public class Graph {
     int V;
-    List<List<GraphNode>> adjList;
+    List<List<Node>> adjList;
     List<List<Integer>> adjMatrix;
-    List<GraphEdge> edgeList;
+    List<Edge> edgeList;
 
     public List<Integer> bfs(int start, int end) {
         if (V == 0) {
@@ -31,8 +31,8 @@ public class Graph {
             if (visited.contains(end)) {
                 break;
             }
-            List<GraphNode> list = adjList.get(node);
-            for(GraphNode graphNode:list) {
+            List<Node> list = adjList.get(node);
+            for(Node graphNode:list) {
                 int toNode = graphNode.getTo();
                 if (!visited.contains(toNode)) {
                     visited.add(toNode);
@@ -66,7 +66,7 @@ public class Graph {
     private void dfsUtil(int node, List<Integer> dfsNodes, Set<Integer> visited) {
         visited.add(node);
         dfsNodes.add(node);
-        for (GraphNode graphNode:adjList.get(node)) {
+        for (Node graphNode:adjList.get(node)) {
             int to = graphNode.getTo();
             if (!visited.contains(to)) {
                 dfsUtil(to, dfsNodes, visited);
@@ -91,8 +91,8 @@ public class Graph {
 
     private void topologicalSortUtil(int node, Set<Integer> visited, Stack<Integer> stack) {
         visited.add(node);
-        List<GraphNode> list = adjList.get(node);
-        for (GraphNode graphNode:list) {
+        List<Node> list = adjList.get(node);
+        for (Node graphNode:list) {
             int to = graphNode.getTo();
             if (!visited.contains(to)) {
                 topologicalSortUtil(to, visited, stack);

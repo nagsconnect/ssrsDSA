@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import main.algorithms.sorting.SelectionSort;
+import com.penjarla.dsa.sorting.SelectionSort;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

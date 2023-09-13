@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import main.algorithms.sorting.BubbleSort;
+import com.penjarla.dsa.sorting.BubbleSort;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

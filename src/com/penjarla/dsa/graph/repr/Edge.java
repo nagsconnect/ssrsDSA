@@ -1,16 +1,16 @@
-package main.entity.graph;
+package com.penjarla.dsa.graph.repr;
 
 /**
  * TODO documentation
  */
-public class GraphEdge {
+public class Edge {
     int from;
     int to;
     int weight;
 
-    public GraphEdge() {}
+    public Edge() {}
 
-    public GraphEdge(int from, int to, int weight) {
+    public Edge(int from, int to, int weight) {
         this.from = from;
         this.to = to;
         this.weight = weight;

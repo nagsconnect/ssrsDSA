@@ -1,4 +1,4 @@
-package main.algorithms.sorting;
+package com.penjarla.dsa.sorting;
 
 import java.util.List;
 

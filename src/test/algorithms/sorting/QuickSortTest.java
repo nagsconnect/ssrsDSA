@@ -1,6 +1,6 @@
 package algorithms.sorting;
 
-import main.algorithms.sorting.QuickSort;
+import com.penjarla.dsa.sorting.QuickSort;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

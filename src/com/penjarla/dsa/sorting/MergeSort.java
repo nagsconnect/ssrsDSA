@@ -1,4 +1,4 @@
-package main.algorithms.sorting;
+package com.penjarla.dsa.sorting;
 
 import lombok.extern.slf4j.Slf4j;
 
