@@ -1,10 +1,7 @@
 package com.penjarla.dsa.sorting;
 
-import lombok.extern.log4j.Log4j2;
-
 import java.util.List;
 
-@Log4j2
 public class InsertionSort {
     List<Integer> list;
 
@@ -34,6 +31,6 @@ public class InsertionSort {
             list.set(secIndex + 1, curElement);
         }
         long endTime = System.currentTimeMillis();
-        log.info("[Insertion Sort] Runtime taken for given list :" + (endTime - startTime));
+//        log.info("[Insertion Sort] Runtime taken for given list :" + (endTime - startTime));
     }
 }

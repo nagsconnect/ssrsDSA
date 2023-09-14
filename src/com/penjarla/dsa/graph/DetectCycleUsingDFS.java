@@ -7,7 +7,7 @@ import java.util.Map;
 enum State {
     NEW, PROCESSING, PROCESSED
 }
-public class GraphDetectCycleUsingDFS {
+public class DetectCycleUsingDFS {
     // return true if there is a cycle
     public boolean isCyclePresent(int n, Map<Integer, List<Integer>> graph) {
         if (graph == null) {
