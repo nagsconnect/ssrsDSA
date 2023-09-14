@@ -1,16 +1,11 @@
 package com.penjarla.dsa.graph.repr;
 
-import com.penjarla.dsa.graph.repr.Edge;
-import com.penjarla.dsa.graph.repr.Node;
-import lombok.Builder;
-
 import java.util.*;
 
 /** TODO  documentation
  * This class represents a graph and its representation
  *
  */
-@Builder
 public class Graph {
     int V;
     List<List<Node>> adjList;
