@@ -23,9 +23,6 @@ public class Graph {
         visited.add(start);
         while (!queue.isEmpty()) {
             int node = queue.poll();
-            if (visited.contains(end)) {
-                break;
-            }
             List<Node> list = adjList.get(node);
             for(Node graphNode:list) {
                 int toNode = graphNode.getTo();
@@ -46,12 +43,10 @@ public class Graph {
         if (V == 0) {
             return new ArrayList<>();
         }
-        int connectedComponents = 0;
         Set<Integer> visited = new HashSet<>();
         List<Integer> dfsNodes = new ArrayList<>();
         for(int node = 0; node < V; node++) {
             if (!visited.contains(node)) {
-                connectedComponents++;
                 dfsUtil(node, dfsNodes, visited);
             }
         }
@@ -67,32 +62,5 @@ public class Graph {
                 dfsUtil(to, dfsNodes, visited);
             }
         }
-    }
-
-    public List<Integer> topologicalSort() {
-        Set<Integer> visited = new HashSet<>();
-        List<Integer> ordering = new ArrayList<>();
-        Stack<Integer> stack = new Stack<>();
-        for(int i = 0; i < V; i++) {
-            if (!visited.contains(i)) {
-                topologicalSortUtil(i, visited, stack);
-            }
-        }
-        while (!stack.isEmpty()) {
-            ordering.add(stack.pop());
-        }
-        return ordering;
-    }
-
-    private void topologicalSortUtil(int node, Set<Integer> visited, Stack<Integer> stack) {
-        visited.add(node);
-        List<Node> list = adjList.get(node);
-        for (Node graphNode:list) {
-            int to = graphNode.getTo();
-            if (!visited.contains(to)) {
-                topologicalSortUtil(to, visited, stack);
-            }
-        }
-        stack.push(node);
     }
 }
