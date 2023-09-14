@@ -10,7 +10,7 @@ import java.util.Comparator;
  */
 @Setter
 @Getter
-public class Node implements Comparator<Node> {
+public class Node {
     int to;
     int weight;
 
@@ -19,16 +19,5 @@ public class Node implements Comparator<Node> {
     public Node(int to, int weight) {
         this.to = to;
         this.weight = weight;
-    }
-
-    @Override
-    public int compare(Node node1, Node node2) {
-        if (node1.weight < node2.weight) {
-            return -1;
-        } else if (node1.weight > node2.weight) {
-            return 1;
-        } else {
-            return 0;
-        }
     }
 }
