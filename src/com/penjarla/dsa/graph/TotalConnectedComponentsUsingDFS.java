@@ -1,15 +1,12 @@
 package com.penjarla.dsa.graph;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
-public class DFSTraversal {
+public class TotalConnectedComponentsUsingDFS {
 
     private Map<Integer, List<Integer>> adjList;
 
-    public DFSTraversal(Map<Integer, List<Integer>> adjList) {
+    public TotalConnectedComponentsUsingDFS(Map<Integer, List<Integer>> adjList) {
         this.adjList = adjList;
     }
 

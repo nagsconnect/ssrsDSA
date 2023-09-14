@@ -2,11 +2,11 @@ package com.penjarla.dsa.graph;
 
 import java.util.*;
 
-public class BFSTraversal {
+public class ShortestPathForTwoNodesUsingBFS {
 
     private Map<Integer, List<Integer>> adjList;
 
-    public BFSTraversal(Map<Integer, List<Integer>> adjList) {
+    public ShortestPathForTwoNodesUsingBFS(Map<Integer, List<Integer>> adjList) {
         this.adjList = adjList;
     }
 
