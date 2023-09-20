@@ -8,8 +8,8 @@ import java.util.*;
  */
 public class Graph {
     int V;
-    List<List<Node>> adjList;
-    List<List<Integer>> adjMatrix;
-    List<Edge> edgeList;
-
+    public Map<Integer, Node> nodes;
+    public Map<Node, List<Edge>> adjList;
+    public List<List<Integer>> adjMatrix;
+    public List<Edge> edgeList;
 }

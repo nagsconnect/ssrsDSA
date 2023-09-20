@@ -11,13 +11,10 @@ import java.util.Comparator;
 @Setter
 @Getter
 public class Node {
-    int to;
-    int weight;
-
+    int value;
     public Node() {}
 
-    public Node(int to, int weight) {
-        this.to = to;
-        this.weight = weight;
+    public Node(int value) {
+        this.value = value;
     }
 }
