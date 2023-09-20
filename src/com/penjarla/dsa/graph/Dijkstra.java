@@ -10,8 +10,9 @@ import java.util.*;
 /**
  * Dijkstra algorithm helps in finding out the shortest path to all nodes from a single node.
  * - All the weights of the nodes must be non-negative
- * - TimeComplexity:
- * - SpaceComplexity:
+ * - TimeComplexity: O((V + E)(LogV)) = O(ELogV) where V=# of nodes, E=# of edges
+ *  Here, O(V + E) time complexity to parse all edges, nodes for shortest path using BFS, O(logV) for minHeap operations
+ * - SpaceComplexity: O(V)
  */
 public class Dijkstra {
     public Graph graph;
