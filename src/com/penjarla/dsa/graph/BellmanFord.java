@@ -9,8 +9,8 @@ import java.util.*;
 /**
  * BellamanFord, a single source shortest path algorithm
  * - An alternative to Dijkstra where edge wt are negative
- * - TimeComplexity:
- * - SpaceComplexity:
+ * - TimeComplexity: O(EV)
+ * - SpaceComplexity: O(V)
  */
 public class BellmanFord {
 
