@@ -9,7 +9,8 @@ import java.util.*;
 public class Graph {
     int V;
     public Map<Integer, Node> nodes;
-    public Map<Node, List<Edge>> adjList;
+    public Map<Node, List<Edge>> wtAdjList;
+    public Map<Node, List<Node>> adjList;
     public List<List<Integer>> adjMatrix;
     public List<Edge> edgeList;
 }

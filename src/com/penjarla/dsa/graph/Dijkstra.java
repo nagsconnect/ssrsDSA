@@ -22,7 +22,7 @@ public class Dijkstra {
     }
 
     public Map<Node, Integer> shortestPath(Node from, Map<Node, Node> prev) {
-        Map<Node, List<Edge>> adjList = graph.adjList;
+        Map<Node, List<Edge>> adjList = graph.wtAdjList;
         Map<Node, Integer> distance = new HashMap<>();
         Set<Node> visited = new HashSet<>();
         PriorityQueue<Pair<Node, Integer>> queue = new PriorityQueue<>(new Comparator<Pair<Node, Integer>>() {
