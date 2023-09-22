@@ -1,6 +1,6 @@
 package algorithms.graph;
 
-import com.penjarla.dsa.graph.Dijkstra;
+import com.penjarla.dsa.graph.shortestpath.Dijkstra;
 import com.penjarla.dsa.graph.repr.Graph;
 import com.penjarla.dsa.graph.repr.Node;
 import org.testng.Assert;

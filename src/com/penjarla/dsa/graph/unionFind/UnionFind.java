@@ -1,4 +1,4 @@
-package com.penjarla.dsa.unionFind;
+package com.penjarla.dsa.graph.unionFind;
 
 import java.util.Arrays;
 

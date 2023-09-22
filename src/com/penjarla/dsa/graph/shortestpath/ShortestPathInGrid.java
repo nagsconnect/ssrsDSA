@@ -1,4 +1,4 @@
-package com.penjarla.dsa.graph;
+package com.penjarla.dsa.graph.shortestpath;
 
 import java.util.*;
 
