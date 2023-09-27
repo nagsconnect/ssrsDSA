@@ -11,7 +11,7 @@ import java.util.Comparator;
 @Setter
 @Getter
 public class Node {
-    int value;
+    public int value;
     public Node() {}
 
     public Node(int value) {

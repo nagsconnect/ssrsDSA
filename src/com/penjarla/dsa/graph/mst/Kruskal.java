@@ -46,9 +46,9 @@ public class Kruskal {
         });
         UnionFind unionFind = new UnionFind(graph.nodes.size());
         for (Edge edge : edgeList) {
-            // if x, y have same parent i.e already connected, then this edge forms a cycle so ignore
-            int x = edge.from.getValue();
-            int y = edge.to.getValue();
+            // if x, y have same parent i.e. already connected, then this edge forms a cycle so ignore
+            int x = edge.from.value;
+            int y = edge.to.value;
             if (!unionFind.connected(x, y)) {
                 mstRoute.add(edge);
                 unionFind.union(x, y);
