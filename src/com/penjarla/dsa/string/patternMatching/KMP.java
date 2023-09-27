@@ -16,6 +16,31 @@ public class KMP {
     public List<Integer> searchPattern(String s, String p) {
         int n = s.length();
         int m = p.length();
+        int[] pi = calulatePi(p);
+        List<Integer> index = new ArrayList<>();
+        int i = 0;
+        int j = 0;
+        while (i < n) {
+            if (s.charAt(i) == p.charAt(j)) {
+                i++;
+                j++;
+            } else {
+                j = j > 0 ? pi[j - 1] : 0;
+
+                if (j == 0) {
+                    i++;
+                }
+            }
+            if (j == m) {
+                index.add(i - j);
+                j = 0;
+            }
+        }
+        return index;
+    }
+
+    private int[] calulatePi(String p) {
+        int m = p.length();
         int[] pi = new int[m];
 
         int i = 1;
@@ -39,24 +64,6 @@ public class KMP {
         for (i = 0; i < m; i++) {
             System.out.print(pi[i] + " ");
         }
-        List<Integer> index = new ArrayList<>();
-        i = 0;
-        j = 0;
-        while (i < n) {
-            if (s.charAt(i) == p.charAt(j)) {
-                i++;
-                j++;
-            } else {
-                if (j == 0) {
-                    i++;
-                }
-                j = j > 0 ? pi[j - 1] : 0;
-            }
-            if (j == m) {
-                index.add(i - j);
-                j = 0;
-            }
-        }
-        return index;
+        return pi;
     }
 }
